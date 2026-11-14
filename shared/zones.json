@@ -1,0 +1,12 @@
+[
+  { "id": "Z1",  "name": "MG Road (CBD)",    "lat": 12.9756, "lng": 77.6050, "type": "business",    "baseDemand": 14 },
+  { "id": "Z2",  "name": "Koramangala",      "lat": 12.9352, "lng": 77.6245, "type": "nightlife",   "baseDemand": 13 },
+  { "id": "Z3",  "name": "Indiranagar",      "lat": 12.9784, "lng": 77.6408, "type": "nightlife",   "baseDemand": 12 },
+  { "id": "Z4",  "name": "Whitefield",       "lat": 12.9698, "lng": 77.7500, "type": "tech",        "baseDemand": 12 },
+  { "id": "Z5",  "name": "Electronic City",  "lat": 12.8452, "lng": 77.6602, "type": "tech",        "baseDemand": 10 },
+  { "id": "Z6",  "name": "HSR Layout",       "lat": 12.9116, "lng": 77.6474, "type": "residential", "baseDemand": 9 },
+  { "id": "Z7",  "name": "Jayanagar",        "lat": 12.9250, "lng": 77.5938, "type": "residential", "baseDemand": 8 },
+  { "id": "Z8",  "name": "Hebbal",           "lat": 13.0358, "lng": 77.5970, "type": "transit",     "baseDemand": 9 },
+  { "id": "Z9",  "name": "Yeshwanthpur",     "lat": 13.0280, "lng": 77.5400, "type": "transit",     "baseDemand": 8 },
+  { "id": "Z10", "name": "Marathahalli",     "lat": 12.9591, "lng": 77.6974, "type": "tech",        "baseDemand": 11 }
+]

@@ -1,0 +1,19 @@
+{
+  "name": "rydora",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RYDORA - Intelligent Ride Matching and Dynamic Driver Allocation System",
+  "scripts": {
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "install:ml": "pip install -r ml/requirements.txt",
+    "dev": "concurrently -k -n api,web -c magenta,cyan \"npm --prefix server start\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start",
+    "seed": "npm --prefix server run seed",
+    "train": "python ml/train_demand_model.py",
+    "test": "npm --prefix server test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

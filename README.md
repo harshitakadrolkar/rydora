@@ -198,28 +198,7 @@ fairness board.
 
 ---
 
-## 6. Demo script (about 5 minutes)
-
-1. **Landing** → open **Admin**. Show the operations centre: live fleet moving, zone surge circles,
-   demand heatmap tab, event stream and KPIs.
-2. In a second browser window (or incognito), log in as **Passenger** → **Book a ride**. Pick
-   *Koramangala Forum Mall* → *Indiranagar Metro*. Show the fare breakdown, surge, ranked nearby drivers
-   and "Why this driver?".
-3. Choose scenario **"First driver rejects"** and confirm. On **Live tracking**, show the automatic
-   reassignment banner, the timeline, the score breakdown and the moving car. Click
-   **Simulate driver delay** → about 15 s later the delay is detected and a new driver is assigned.
-4. Log in as **Driver** (third window) → **Go online** → **Request test ride**. Accept the offer
-   (or let it time out to show reassignment). Then **Start pickup → Start trip → Complete ride**.
-   Show earnings and the repositioning suggestion → **Navigate there**.
-5. **Ride pooling**: run the pooling engine, click a group to see its optimised stop order and savings.
-   For a live pool, book two Pool rides with nearby pickups (or use admin "Generate" with type Pool).
-6. **Demand forecast**: predicted vs actual, heatmap, feature importance, then **Retrain model (Python)**.
-7. **Zone intelligence**: shortage zones → **Apply plan** and watch drivers reposition.
-8. **Driver allocation**: run the nearest vs RYDORA comparison and walk through the explainable decision log.
-
----
-
-## 7. Project structure
+## 6. Project structure
 
 ```
 rydora/
@@ -260,7 +239,7 @@ rydora/
 
 ---
 
-## 8. Main API endpoints
+## 7. Main API endpoints
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -278,7 +257,7 @@ Socket events: `fleet:update`, `zones:update`, `ride:update`, `ride:location`, `
 
 ---
 
-## 9. Configuration (`server/.env`)
+## 8. Configuration (`server/.env`)
 
 | Variable | Default | Meaning |
 |---|---|---|
@@ -295,7 +274,7 @@ live from the admin dashboard.
 
 ---
 
-## 10. Known limitations (by design for a demo)
+## 9. Known limitations (by design for a demo)
 
 - Live ride state (in-flight rides, offers) is held in memory for real-time performance and persisted to
   the database on every change. Rides in progress when the server restarts are closed as
@@ -305,7 +284,7 @@ live from the admin dashboard.
 
 ---
 
-## 11. New features: eco rides, women safety, voice assistant
+## 10. New features: eco rides, women safety, voice assistant
 
 ### 11.1 EV eco rides and green bonus
 - **Book a Ride → Ride preferences → "EV only (eco ride)"** offers the request only to electric vehicles
@@ -355,7 +334,7 @@ drop-off point suggestions, and integration with state police apps (e.g. KSP / S
 
 ---
 
-## 12. Round-3 features: auto-rebook, passengers, child seat, traffic rerouting, stronger SOS
+## 11. Round-3 features: auto-rebook, passengers, child seat, traffic rerouting, stronger SOS
 
 ### 12.1 Automatic rebooking
 If a ride is cancelled by the **system** (no driver found, or the driver can't reach you in time) and not by the
